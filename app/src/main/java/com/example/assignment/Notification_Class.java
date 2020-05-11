@@ -23,7 +23,7 @@ public class Notification_Class extends FirebaseMessagingService {
     }
     public void showNotification1(String title,String message,String ChannelId)
     {
-        if (ChannelId == "Message") {
+        if (ChannelId.equals("Message")) {
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, new Intent(this, Message.class), 0);
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "Channel")
                     .setContentTitle(title)
@@ -35,7 +35,7 @@ public class Notification_Class extends FirebaseMessagingService {
             NotificationManagerCompat manager = NotificationManagerCompat.from(this);
             manager.notify(0, builder.build());
         }
-        else if (ChannelId == "Notification"){
+        else if (ChannelId.equals("Notification")){
             PendingIntent pendingIntent = PendingIntent.getActivity(this,1,new Intent(this,Notifications.class),1);
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"Channel")
                     .setContentTitle(title)
