@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="Messages">Messages</string>
+    <string name="Notification">Notification</string>
+    <string name="Post">Post</string>
+    <string name="this_is_messages_screen">This is Messages Screen</string>
+    <string name="This_is_Notifications_Screen">This is Notifications Screen</string>
+</resources>
